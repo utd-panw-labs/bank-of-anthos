@@ -31,6 +31,9 @@ spec:
       containers:
         - name: postgres
           image: us-central1-docker.pkg.dev/panw-utd-public-cloud/utd-demo-images/utd-cnsp/bank-of-anthos-ci/ledger-db:v0.5.11
+          securityContext:
+            allowPrivilegeEscalation: false          
+            runAsNonRoot: true
           ports:
             - containerPort: 5432
           env:
