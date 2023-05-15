@@ -1,8 +1,7 @@
 name: Prisma Cloud IaC Scan
-on:
-  pull_request:
-    branches:
-      - 'main'
+on: 
+  push:
+    branches: '**'
 jobs:
   kubernetes-scan:
     runs-on: ubuntu-latest
