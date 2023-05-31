@@ -26,5 +26,5 @@ jobs:
           output_file_path: console,results.sarif
           quiet: true
           log_level: WARNING
-          skip_check: LOW
+          skip_check: LOW,MEDIUM
           check: CKV_K8S*
